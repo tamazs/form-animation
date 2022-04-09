@@ -83,6 +83,7 @@ form {
 .checkbox {
   opacity: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .checkbox-container {
@@ -131,3 +132,4 @@ button {
   margin-top: 1rem;
   align-self: flex-start;
 }
+
