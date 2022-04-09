@@ -28,6 +28,10 @@ form {
   color: #6391e8;
 }
 
+.description {
+  font-size: 0.9rem;
+}
+
 .contact-right, .contact-left {
   flex: 1;
 }
@@ -46,7 +50,7 @@ form {
   border: none;
   outline: none;
   color: #777474;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .input-container {
@@ -58,7 +62,7 @@ form {
   z-index: 1;
   pointer-events: none;
   padding: 0.3rem 0rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   opacity: 0.6;
   transform-origin: left;
 }
@@ -69,10 +73,11 @@ form {
   bottom: 0;
   overflow: visible;
   opacity: 0.8;
+  width: 100%;
 }
 
 .checkbox-label {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   padding-left: 0.5rem;
 }
 
@@ -123,7 +128,7 @@ form {
 button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   background: #6190e8;
   color: white;
   border-style: none;
@@ -136,8 +141,37 @@ button {
 
 #character {
   position: absolute;
-  transform: scale(0.9) translate(0%, 30%);
+  transform: scale(0.6) translate(0%, 30%);
   bottom: 0;
-  left: 30;
+  left: 0;
   transform-origin: bottom;
+}
+
+.submitted {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  color: #777474;
+  font-size: 1rem;
+  pointer-events: none;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+@media screen and (max-width: 821px){
+  form{
+    width: 90vw;
+    min-height: 80vh;
+    flex-direction: column;
+    padding: 8rem 3rem;
+  }
+
+  .line-svg{
+    width: 100%;
+  }
+
+  #character{
+    transform: scale(0.4) translate(0% 30%);
+  }
 }
